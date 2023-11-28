@@ -1,0 +1,57 @@
+html {
+    box-sizing: border-box;
+} 
+
+* {
+    box-sizing: inherit;
+} 
+
+body {
+    color: #000;
+    font-family: 'Mate', 'Lucida Bright', 'Times New Roman', serif;
+    margin: 0;
+}
+
+#heading {
+    font-family: 'Josefin Sans', 'Verdana', 'Futura', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    max-width: 650px;
+}
+
+#button {
+    background: #BD9168;
+    font-size: 1.5rem;
+    margin: 5rem 0;
+}
+
+
+.books {
+    background: #D3B79C;
+}
+
+p {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    background: #ECE2DA;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Recommendations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mate&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#fiction">Fiction</a></li>
+            <li><a href="#ya">Young Adult</a></li>
+            <li><a href="#nonfiction">Non-Fiction</a></li>
+            <li><a href="#">Mystery</a></li>
+            <li><a href="#">Thriller</a></li>
+            <li><a href="#">Romance</a></li>
+            <li><a href="#">Science Fiction/Fantasy</a></li>
+        </ul>
+    </nav>
+
+    <div id="heading" class="container-lg text-center">
+        <div class="mt-5 mb-3 h1 fw-bold">Title Of Page</div>
+        <div class="mt-5 mb-3 h3 fw-bold">Find your next book!</div>
+        <div class="h5">
+            Description of page here! Click the button below to take the genre quiz if you are not sure which genre you would be interested in!
+        </div>
+        <button id="button" type="button" class="btn">Genre Quiz</button>
+    </div>
+
+
+    <div id="form" class="container">
+        <div class="row">
+            <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
+            <div class="shadow-lg p-4">
+                <div id="title" class="my-3 h1 fw-bold"> Genre Quiz</div>
+                <div class="mt-3">
+                    <p>Do you want to get back into reading but don't know which genre suits you best? Take this quiz to find which genre of books you should pick up next!</p>
+                </div>
+            </div>
+
+                <form>
+
+                <div class="my-4">
+                    <div class="form-label">What type of television shows or movies do you most enjoy?</div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques1" value="action">Action</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques1" value="drama">Drama</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques1" value="magical">Magical</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques1" value="reality">Reality</label>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <div class="form-label">Question 2</div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques2" value="answer-1">Answer 1</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques2" value="Joseph-Wiesel"> Joseph Wiesel</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques2" value="Kevin-Lynch"> Kevin Lynch</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques2" value="Steve-Jobs"> Steve Jobs</label>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <label for="sixthquestion" class="form-label"> Which is not a feature of the Apple Watch?</label>
+                    <select class="form-select" name="watchmodel" id="sixthquestion">
+                        <option value="default">Select one below</option>
+                        <option value="splash-resistant">Splash Resistant</option> 
+                        <option value="heart-sensor">Heart Sensor</option> 
+                        <option value="GPS">GPS</option> 
+                        <option value="glucose-sensor">Glucose Levels Sensor</option> 
+                        <option value="blood-oxygen-sensor">Blood Oxygen Sensor</option> 
+                        <option value="compass">Compass</option> 
+                    </select>
+                </div>
+
+                <div class="my-4">
+                    <div class="form-label">Who was hired by Apple to  lead the Apple Watch project in development?</div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques3" value="Tim-Cook"> Tim Cook</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques3" value="Joseph-Wiesel"> Joseph Wiesel</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques3" value="Kevin-Lynch"> Kevin Lynch</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques3" value="Steve-Jobs"> Steve Jobs</label>
+                    </div>
+                </div>
+
+                <div class="my-4">
+                    <div class="form-label">Who was hired by Apple to  lead the Apple Watch project in development?</div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques4" value="Tim-Cook"> Tim Cook</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques4" value="Joseph-Wiesel"> Joseph Wiesel</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques4" value="Kevin-Lynch"> Kevin Lynch</label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="ques4" value="Steve-Jobs"> Steve Jobs</label>
+                    </div>
+                </div>
+
+                <div class="my-4 pb-5">
+                    <input type="submit" class="btn btn-success" value="Submit">
+                    <input type="reset" class="btn btn-secondary" value="Reset">
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col border rounded text-center m-1 books">
+            <div id="fiction" class="my-3 h3 fw-bold"> Fiction</div>
+            <div id="fictionCarousel" class="carousel slide my-2">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="heavenimg" src="images/heaven.jpg" class="d-block w-50 mx-auto img-thumbnail img-fluid" alt="Cover of The Heaven and Earth Grocery Store">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/ladytan.jpg" class="d-block w-50" alt="Cover of Lady Tan's Circle of Women">
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target= '#fictionCarousel'
+                data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#fictionCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+        </div>
+        <div class="col rounded text-center m-1 books">
+            <div class="my-3 h5">
+                <p>Click on the cover of the book that most calls to you to learn more about it!</p>
+            </div>
+            <div class="description" id="heaven">
+                <p>The Heaven & Earth Grocery Store by James McBride is a literary mystery book. </p>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col rounded text-center m-1 books">
+                <div class="my-3 h5">
+                    <p>Click on the cover of the book that most calls to you to learn more about it!</p>
+                </div>
+                <div class="description" id="divine">
+                    <p>Divine Rivals is a young adult fantasy book written by Rebecca Ross. It follows</p>
+                </div>
+                
+            </div>
+        <div class="col border rounded text-center books m-1">
+            <div id="ya" class="my-3 h3 fw-bold">Young Adult
+            </div>
+            <div class="my-3 h5">Click on the cover to learn more about each book!</div>
+            <div id="yaCarousel" class="carousel slide my-2">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="divineimg" src="images/divine-rivals.jpg" class="d-block w-50 mx-auto img-thumbnail img-fluid" alt="Cover of Divine Rivals">
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target= '#yaCarousel'
+                data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#yaCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>         
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border rounded text-center books m-1">
+            <div id="nonfiction" class="my-3 h3 fw-bold">Non-Fiction</div>
+            <div class="my-3 h5">Click on the cover to learn more about each book!</div>
+            <div id="nonFictionCarousel" class="carousel slide my-2">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img id="heavenimg" src="images/atomichabits.jpg" class="d-block w-50 mx-auto img-thumbnail img-fluid" alt="Cover of Atomic Habits">
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target= '#nonFictionCarousel'
+                data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#fictionCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="col rounded text-center m-1 books">
+            <div class="my-3 h5">
+                <p>Click on the cover of the book that most calls to you to learn more about it!</p>
+            </div>
+            <div class="description" id="">
+                <p>The Heaven & Earth Grocery Store by James McBride is a literary mystery book. </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border rounded text-center books m-1">
+            <div class="my-3 h3 fw-bold">Mystery</div>
+        </div>
+        <div class="col rounded text-center m-1 books">
+            <div class="my-3 h5">
+                <p>Click on the cover of the book that most calls to you to learn more about it!</p>
+            </div>
+            <div class="description" id="mystery">
+                <p>The Heaven & Earth Grocery Store by James McBride is a literary mystery book. </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col rounded text-center m-1 books">
+            <div class="my-3 h5">
+                <p>Click on the cover of the book that most calls to you to learn more about it!</p>
+            </div>
+            <div class="description" id="">
+                <p>The Heaven & Earth Grocery Store by James McBride is a literary mystery book. </p>
+            </div>
+        </div>
+        <div class="col border rounded text-center books m-1">
+            <div class="my-3 h3 fw-bold">Thriller</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border rounded text-center books m-1">
+            <div class="my-3 h3 fw-bold">Romance</div>
+        </div>
+        <div class="col rounded text-center m-1 books">
+            <div class="my-3 h5">
+                <p>Click on the cover of the book that most calls to you to learn more about it!</p>
+            </div>
+            <div class="description" id="">
+                <p>The Heaven & Earth Grocery Store by James McBride is a literary mystery book. </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col rounded text-center m-1 books">
+            <div class="my-3 h5">
+                <p>Click on the cover of the book that most calls to you to learn more about it!</p>
+            </div>
+            <div class="description" id="">
+                <p>The Heaven & Earth Grocery Store by James McBride is a literary mystery book. </p>
+            </div>
+        </div>
+        <div class="col border rounded text-center books m-1">
+            <div class="my-3 h3 fw-bold">Science Fiction/Fantasy</div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
