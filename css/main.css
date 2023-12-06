@@ -25,6 +25,13 @@ body {
     margin: 5rem 0;
 }
 
+#genreBox {
+    padding: 2rem;
+    border-style: double;
+    font-size: 2rem;
+    margin: 0 0 5rem 0;
+    background: #D3B79C;
+}
 
 .books {
     background: #D3B79C;
@@ -54,4 +61,11 @@ a {
     color: #000;
     text-decoration: none;
 }
+  
+  @media screen and (max-width: 890px) {
+    nav ul li {
+        margin: 0.5rem;
+        font-size: small;
 
+    }
+  }
