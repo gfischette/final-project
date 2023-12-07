@@ -61,6 +61,18 @@ a {
     text-decoration: none;
 }
 
+footer {
+    background:#D3B79C;
+    text-align: center;
+    margin: 10rem 0 0 0;
+    padding: 1rem;
+}
+
+footer a {
+    color: #2929ff;
+    text-decoration: underline;
+}
+
 
 /* toggle menu for navigation from https://codepen.io/bradfrost/pen/ndygmR */
 
