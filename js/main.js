@@ -1,5 +1,5 @@
-// This code was taken from https://github.com/kayleyseow/Personality-Quiz and modifed to work with my app.
 
+// This code was taken from https://github.com/kayleyseow/Personality-Quiz and modifed to work with my app.
 
 
 var questionCount = 0;
@@ -151,19 +151,19 @@ function updateResult() {
   if (result1Score >= 2) {
     message = "You should try reading fiction books! Scroll down to see the fiction recommendations.";
   } else if (result2Score >= 2) {
-     message =  "You should try reading young adult books! Scroll down to see the fiction recommendations.";
+     message =  "You should try reading young adult books! Scroll down to see the young adult recommendations.";
   } else if (result3Score >= 2) {
-    message  = "You should try reading non-fiction books! Scroll down to see the fiction recommendations.";
+    message  = "You should try reading non-fiction books! Scroll down to see the non-fiction recommendations.";
   } else if (result4Score >= 2) {
-    message = "You should try reading romance books! Scroll down to see the fiction recommendations.";
+    message = "You should try reading romance books! Scroll down to see the romance recommendations.";
   } else if (result5Score >= 2) {
-    message = "You should try reading mystery books! Scroll down to see the fiction recommendations.";
+    message = "You should try reading mystery books! Scroll down to see the mystery recommendations.";
   } else if (result6Score >= 2) {
-    message = "You should try reading thriller books! Scroll down to see the fiction recommendations.";
+    message = "You should try reading thriller books! Scroll down to see the thriller recommendations.";
   } else if (result7Score >= 2) {
-    message = "You should try reading sci-fi or fantasy books! Scroll down to see the fiction recommendations.";
+    message = "You should try reading sci-fi or fantasy books! Scroll down to see the sci-fi/fantasy recommendations.";
   } else {
-    message = "😲You'll meet Jack Dorsey on Thursday.";
+    message = "Try retaking the quiz one more time!";
   }
 }
 
@@ -215,8 +215,19 @@ function hideAll() {
   });
 
 
+// toggle menu for navigation from https://codepen.io/bradfrost/pen/ndygmR 
+
+  $(document).ready(function() {
+    $('body').addClass('js');
+    var $menu = $('#menu'),
+      $menulink = $('.menu-link');
+    
+  $menulink.click(function() {
+    $menulink.toggleClass('active');
+    $menu.toggleClass('active');
+    return false;
+  });});
 
 
 
-
-
+  
