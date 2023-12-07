@@ -56,6 +56,11 @@ nav ul li {
     display: inline-block;
 }
 
+.description {
+    font-size: 1rem;
+    padding: 0;
+}
+
 a {
     color: #000;
     text-decoration: none;

@@ -1,7 +1,6 @@
 
 // This code was taken from https://github.com/kayleyseow/Personality-Quiz and modifed to work with my app.
 
-
 var questionCount = 0;
 var result1Score = 0; // fiction
 var result2Score = 0; // young adult
@@ -173,6 +172,9 @@ submit.onclick = () => {
     results.innerText = message;
 }
 
+
+// this is my code
+
 let button = document.querySelector('#button');
 let form = document.querySelector('#form');
 
@@ -209,6 +211,18 @@ function hideAll() {
           break;
         case 'divineimg':
             document.querySelector('#divine').style.display = 'block';
+            break;
+          case 'vanessaimg':
+            document.querySelector('#vanessa').style.display = 'block';
+            break;
+          case 'violetaimg':
+            document.querySelector('#violeta').style.display = 'block';
+            break;
+          case 'crossroadsimg':
+            document.querySelector('#crossroads').style.display = 'block';
+            break;
+          case 'ladyimg':
+            document.querySelector('#lady').style.display = 'block';
             break;
       }
     }
