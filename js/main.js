@@ -215,11 +215,11 @@ function hideAll() {
           case 'vanessaimg':
             document.querySelector('#vanessa').style.display = 'block';
             break;
-          case 'violetaimg':
-            document.querySelector('#violeta').style.display = 'block';
+          case 'klaraimg':
+            document.querySelector('#klara').style.display = 'block';
             break;
-          case 'crossroadsimg':
-            document.querySelector('#crossroads').style.display = 'block';
+          case 'mungoimg':
+            document.querySelector('#mungo').style.display = 'block';
             break;
           case 'ladyimg':
             document.querySelector('#lady').style.display = 'block';
