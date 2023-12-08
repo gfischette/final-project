@@ -209,6 +209,9 @@ function hideAll() {
         case 'heavenimg':
           document.querySelector('#heaven').style.display = 'block';
           break;
+        case 'ladyimg':
+          document.querySelector('#lady').style.display ='block';
+          break;
         case 'divineimg':
             document.querySelector('#divine').style.display = 'block';
             break;
@@ -221,9 +224,49 @@ function hideAll() {
           case 'mungoimg':
             document.querySelector('#mungo').style.display = 'block';
             break;
-          case 'ladyimg':
-            document.querySelector('#lady').style.display = 'block';
+          case 'telegraphimg':
+            document.querySelector('#telegraph').style.display = 'block';
             break;
+          case 'legendimg':
+            document.querySelector('#legend').style.display = 'block';
+            break;
+          case 'rageimg':
+            document.querySelector('#rage').style.display = 'block';
+            break;
+          case 'spadesimg':
+            document.querySelector('#spades').style.display = 'block';
+            break;
+          case 'atomicimg':
+            document.querySelector('#atomic').style.display = 'block';
+            break;
+          case 'hmartimg':
+            document.querySelector('#hmart').style.display = 'block';
+            break;
+          case 'earthimg':
+            document.querySelector('#earth').style.display = 'block';
+            break;
+          case 'anthropoceneimg':
+            document.querySelector('#anthropocene').style.display = 'block';
+            break;
+          case 'cultishimg':
+            document.querySelector('#cultish').style.display = 'block';
+            break;
+          case 'whisperimg':
+            document.querySelector('#whisper').style.display = 'block';
+            break;
+          case 'witchesimg':
+            document.querySelector('#witches').style.display = 'block';
+            break;
+          case 'titaniumimg':
+            document.querySelector('#titanium').style.display = 'block';
+            break;
+          case 'seastarsimg':
+            document.querySelector('#seastars').style.display = 'block';
+            break;
+          case 'kaikeyiimg':
+            document.querySelector('#kaikeyi').style.display = 'block';
+            break;
+            
       }
     }
   });

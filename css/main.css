@@ -73,7 +73,7 @@ footer {
     padding: 1rem;
 }
 
-footer a, .description a {
+footer a, .description a, #heading a {
     color: #2929ff;
     text-decoration: underline;
 }
