@@ -53,7 +53,7 @@ q2a4.addEventListener("click", result5, result3);
 q3a1.addEventListener("click", result6, result1);
 q3a2.addEventListener("click", result5, result4);
 q3a3.addEventListener("click", result4, result6);
-q3a4.addEventListener("click", result1, result1);
+q3a4.addEventListener("click", result2, result1);
 
 q4a1.addEventListener("click", result6, result5);
 q4a2.addEventListener("click", result4, result2);
@@ -62,7 +62,7 @@ q4a4.addEventListener("click", result3, result1);
 
 q5a1.addEventListener("click", result3, result6);
 q5a2.addEventListener("click", result4, result2);
-q5a3.addEventListener("click", result2, result3);
+q5a3.addEventListener("click", result1, result3);
 q5a4.addEventListener("click", result7, result5);
 
 
@@ -148,21 +148,21 @@ let message;
 
 function updateResult() {
   if (result1Score >= 2) {
-    message = "You should try reading fiction books! Scroll down to see the fiction recommendations.";
+    message = "You should try reading fiction books! Scroll down or click on the navigation bar above to see the fiction recommendations.";
   } else if (result2Score >= 2) {
-     message =  "You should try reading young adult books! Scroll down to see the young adult recommendations.";
+     message =  "You should try reading young adult books! Scroll down or click on the navigation bar above to see the young adult recommendations.";
   } else if (result3Score >= 2) {
-    message  = "You should try reading non-fiction books! Scroll down to see the non-fiction recommendations.";
+    message  = "You should try reading non-fiction books! Scroll down or click on the navigation bar above to see the non-fiction recommendations.";
   } else if (result4Score >= 2) {
-    message = "You should try reading romance books! Scroll down to see the romance recommendations.";
+    message = "You should try reading romance books! Scroll down or click on the navigation bar above to see the romance recommendations.";
   } else if (result5Score >= 2) {
-    message = "You should try reading mystery books! Scroll down to see the mystery recommendations.";
+    message = "You should try reading mystery books! Scroll down or click on the navigation bar above to see the mystery recommendations.";
   } else if (result6Score >= 2) {
-    message = "You should try reading thriller books! Scroll down to see the thriller recommendations.";
+    message = "You should try reading thriller books! Scroll down or click on the navigation bar above to see the thriller recommendations.";
   } else if (result7Score >= 2) {
-    message = "You should try reading sci-fi or fantasy books! Scroll down to see the sci-fi/fantasy recommendations.";
+    message = "You should try reading sci-fi or fantasy books! Scroll down or click on the navigation bar above to see the sci-fi/fantasy recommendations.";
   } else {
-    message = "Try retaking the quiz one more time by refreshing the page!";
+    message = "Hmm... Your answers were a bit conflicting. Try retaking the quiz one more time by refreshing the page!";
   }
 }
 
@@ -317,19 +317,7 @@ function hideAll() {
   });
 
 
-// toggle menu for navigation from https://codepen.io/bradfrost/pen/ndygmR 
-
-  $(document).ready(function() {
-    $('body').addClass('js');
-    var $menu = $('#menu'),
-      $menulink = $('.menu-link');
     
-  $menulink.click(function() {
-    $menulink.toggleClass('active');
-    $menu.toggleClass('active');
-    return false;
-  });});
-
 
 
   
