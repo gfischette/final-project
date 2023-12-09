@@ -162,7 +162,7 @@ function updateResult() {
   } else if (result7Score >= 2) {
     message = "You should try reading sci-fi or fantasy books! Scroll down to see the sci-fi/fantasy recommendations.";
   } else {
-    message = "Try retaking the quiz one more time!";
+    message = "Try retaking the quiz one more time by refreshing the page!";
   }
 }
 
@@ -287,14 +287,29 @@ function hideAll() {
           case 'slowfireimg':
             document.querySelector('#slowfire').style.display = 'block';
             break;
-          case 'lastthingimg':
-            document.querySelector('#lastthing').style.display = 'block';
+          case 'winterimg':
+            document.querySelector('#winter').style.display = 'block';
             break;
-          case 'secretsimg':
-            document.querySelector('#secrets').style.display = 'block';
+          case 'fortuneimg':
+            document.querySelector('#fortune').style.display = 'block';
             break;
           case 'veraimg':
             document.querySelector('#vera').style.display = 'block';
+            break;
+          case 'onlyoneimg':
+            document.querySelector('#onlyone').style.display = 'block';
+            break;
+          case 'viceimg':
+            document.querySelector('#vice').style.display = 'block';
+            break;
+          case 'executionimg':
+            document.querySelector('#execution').style.display = 'block';
+            break;
+          case 'sugarimg':
+            document.querySelector('#sugar').style.display = 'block';
+            break;
+          case 'razorimg':
+            document.querySelector('#razor').style.display = 'block';
             break;
             
       }
