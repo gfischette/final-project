@@ -39,31 +39,31 @@ var q5a3 = document.querySelector("#fivethree");
 var q5a4 = document.querySelector("#fivefour");
 var result = document.querySelector("#results");
 
-q1a1.addEventListener("click", result6);
-q1a2.addEventListener("click", result2);
-q1a3.addEventListener("click", result7);
-q1a4.addEventListener("click", result1);
-q1a5.addEventListener("click", result5);
+q1a1.addEventListener("click", result6, result7);
+q1a2.addEventListener("click", result2, result4);
+q1a3.addEventListener("click", result7, result6);
+q1a4.addEventListener("click", result1, result3);
+q1a5.addEventListener("click", result5, result5);
 
-q2a1.addEventListener("click", result1);
-q2a2.addEventListener("click", result3);
-q2a3.addEventListener("click", result7);
-q2a4.addEventListener("click", result5);
+q2a1.addEventListener("click", result1, result2);
+q2a2.addEventListener("click", result3, result7);
+q2a3.addEventListener("click", result7, result4);
+q2a4.addEventListener("click", result5, result3);
 
-q3a1.addEventListener("click", result6);
-q3a2.addEventListener("click", result5);
-q3a3.addEventListener("click", result4);
-q3a4.addEventListener("click", result1);
+q3a1.addEventListener("click", result6, result1);
+q3a2.addEventListener("click", result5, result4);
+q3a3.addEventListener("click", result4, result6);
+q3a4.addEventListener("click", result1, result1);
 
-q4a1.addEventListener("click", result6);
-q4a2.addEventListener("click", result4);
-q4a3.addEventListener("click", result2);
-q4a4.addEventListener("click", result3);
+q4a1.addEventListener("click", result6, result5);
+q4a2.addEventListener("click", result4, result2);
+q4a3.addEventListener("click", result2, result7);
+q4a4.addEventListener("click", result3, result1);
 
-q5a1.addEventListener("click", result3);
-q5a2.addEventListener("click", result4);
-q5a3.addEventListener("click", result2);
-q5a4.addEventListener("click", result7);
+q5a1.addEventListener("click", result3, result6);
+q5a2.addEventListener("click", result4, result2);
+q5a3.addEventListener("click", result2, result3);
+q5a4.addEventListener("click", result7, result5);
 
 
 function result1() {
@@ -236,8 +236,8 @@ function hideAll() {
           case 'spadesimg':
             document.querySelector('#spades').style.display = 'block';
             break;
-          case 'atomicimg':
-            document.querySelector('#atomic').style.display = 'block';
+          case 'livingimg':
+            document.querySelector('#living').style.display = 'block';
             break;
           case 'hmartimg':
             document.querySelector('#hmart').style.display = 'block';
@@ -265,6 +265,36 @@ function hideAll() {
             break;
           case 'kaikeyiimg':
             document.querySelector('#kaikeyi').style.display = 'block';
+            break;
+          case 'coldimg':
+            document.querySelector('#cold').style.display = 'block';
+            break;
+          case 'comedyimg':
+            document.querySelector('#comedy').style.display = 'block';
+            break;
+          case 'sevenimg':
+            document.querySelector('#seven').style.display = 'block';
+            break;
+          case 'delilahimg':
+            document.querySelector('#delilah').style.display = 'block';
+            break;
+          case 'charmimg':
+            document.querySelector('#charm').style.display = 'block';
+            break;
+          case 'violinimg':
+            document.querySelector('#violin').style.display = 'block';
+            break;
+          case 'slowfireimg':
+            document.querySelector('#slowfire').style.display = 'block';
+            break;
+          case 'lastthingimg':
+            document.querySelector('#lastthing').style.display = 'block';
+            break;
+          case 'secretsimg':
+            document.querySelector('#secrets').style.display = 'block';
+            break;
+          case 'veraimg':
+            document.querySelector('#vera').style.display = 'block';
             break;
             
       }
