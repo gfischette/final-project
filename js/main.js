@@ -39,36 +39,37 @@ var q5a3 = document.querySelector("#fivethree");
 var q5a4 = document.querySelector("#fivefour");
 var result = document.querySelector("#results");
 
-q1a1.addEventListener("click", result6, result7);
-q1a2.addEventListener("click", result2, result4);
-q1a3.addEventListener("click", result7, result6);
-q1a4.addEventListener("click", result1, result3);
-q1a5.addEventListener("click", result5, result5);
+q1a1.addEventListener("click", result7);
+q1a2.addEventListener("click", result3);
+q1a3.addEventListener("click", result7);
+q1a4.addEventListener("click", result1);
+q1a5.addEventListener("click", result6);
 
-q2a1.addEventListener("click", result1, result2);
-q2a2.addEventListener("click", result3, result7);
-q2a3.addEventListener("click", result7, result4);
-q2a4.addEventListener("click", result5, result3);
+q2a1.addEventListener("click", result2);
+q2a2.addEventListener("click", result9);
+q2a3.addEventListener("click", result15);
+q2a4.addEventListener("click", result5);
 
-q3a1.addEventListener("click", result6, result1);
-q3a2.addEventListener("click", result5, result4);
-q3a3.addEventListener("click", result4, result6);
-q3a4.addEventListener("click", result2, result1);
+q3a1.addEventListener("click", result12);
+q3a2.addEventListener("click", result10);
+q3a3.addEventListener("click", result13);
+q3a4.addEventListener("click", result2);
 
-q4a1.addEventListener("click", result6, result5);
-q4a2.addEventListener("click", result4, result2);
-q4a3.addEventListener("click", result2, result7);
-q4a4.addEventListener("click", result3, result1);
+q4a1.addEventListener("click", result14);
+q4a2.addEventListener("click", result3);
+q4a3.addEventListener("click", result4);
+q4a4.addEventListener("click", result1);
 
-q5a1.addEventListener("click", result3, result6);
-q5a2.addEventListener("click", result4, result2);
-q5a3.addEventListener("click", result1, result3);
-q5a4.addEventListener("click", result7, result5);
+q5a1.addEventListener("click", result8);
+q5a2.addEventListener("click", result3);
+q5a3.addEventListener("click", result1);
+q5a4.addEventListener("click", result11);
 
 
 function result1() {
   if (questionCount < 5) {
     result1Score++;
+    result3Score++;
     questionCount++;
   }
 
@@ -79,6 +80,7 @@ function result1() {
 
 function result2() {
   if (questionCount < 5) {
+    result1Score++;
     result2Score++;
     questionCount++;
   }
@@ -90,7 +92,8 @@ function result2() {
 
 function result3() {
   if (questionCount < 5) {
-    result3Score++;
+    result2Score++;
+    result4Score++;
     questionCount++;
   }
 
@@ -101,7 +104,8 @@ function result3() {
 
 function result4() {
   if (questionCount < 5) {
-    result4Score++;
+    result2Score++;
+    result7Score++;
     questionCount++;
   }
 
@@ -113,6 +117,7 @@ function result4() {
 function result5() {
   if (questionCount < 5) {
     result5Score++;
+    result3Score++;
     questionCount++;
   }
 
@@ -123,7 +128,8 @@ function result5() {
 
 function result6() {
   if (questionCount < 5) {
-    result6Score++;
+    result5Score++;
+    result5Score++;
     questionCount++;
   }
 
@@ -134,6 +140,7 @@ function result6() {
 
 function result7() {
   if (questionCount < 5) {
+    result6Score++;
     result7Score++;
     questionCount++;
   }
@@ -143,23 +150,120 @@ function result7() {
   }
 }
 
+function result8() {
+  if (questionCount < 5) {
+    result6Score++;
+    result3Score++;
+    questionCount++;
+  }
+
+  if (questionCount >= 5) {
+    updateResult();
+  }
+}
+
+function result9() {
+  if (questionCount < 5) {
+    result7Score++;
+    result3Score++;
+    questionCount++;
+  }
+
+  if (questionCount >= 5) {
+    updateResult();
+  }
+}
+
+function result10() {
+  if (questionCount < 5) {
+    result5Score++;
+    result4Score++;
+    questionCount++;
+  }
+
+  if (questionCount >= 5) {
+    updateResult();
+  }
+}
+
+function result11() {
+  if (questionCount < 5) {
+    result5Score++;
+    result7Score++;
+    questionCount++;
+  }
+
+  if (questionCount >= 5) {
+    updateResult();
+  }
+}
+
+function result12() {
+  if (questionCount < 5) {
+    result6Score++;
+    result1Score++;
+    questionCount++;
+  }
+
+  if (questionCount >= 5) {
+    updateResult();
+  }
+}
+
+function result13 () {
+  if (questionCount < 5) {
+    result6Score++;
+    result4Score++;
+    questionCount++;
+  }
+
+  if (questionCount >= 5) {
+    updateResult();
+  }
+}
+
+function result14() {
+  if (questionCount < 5) {
+    result5Score++;
+    result6Score++;
+    questionCount++;
+  }
+
+  if (questionCount >= 5) {
+    updateResult();
+  }
+}
+
+function result15() {
+  if (questionCount < 5) {
+    result7Score++;
+    result4Score++;
+    questionCount++;
+  }
+
+  if (questionCount >= 5) {
+    updateResult();
+  }
+}
+
+
 let message;
 
 
 function updateResult() {
-  if (result1Score >= 2) {
+  if (result1Score >= 3) {
     message = "You should try reading fiction books! Scroll down or click on the navigation bar above to see the fiction recommendations.";
-  } else if (result2Score >= 2) {
+  } else if (result2Score >= 3) {
      message =  "You should try reading young adult books! Scroll down or click on the navigation bar above to see the young adult recommendations.";
-  } else if (result3Score >= 2) {
+  } else if (result3Score >= 3) {
     message  = "You should try reading non-fiction books! Scroll down or click on the navigation bar above to see the non-fiction recommendations.";
-  } else if (result4Score >= 2) {
+  } else if (result4Score >= 3) {
     message = "You should try reading romance books! Scroll down or click on the navigation bar above to see the romance recommendations.";
-  } else if (result5Score >= 2) {
+  } else if (result5Score >= 3) {
     message = "You should try reading mystery books! Scroll down or click on the navigation bar above to see the mystery recommendations.";
-  } else if (result6Score >= 2) {
+  } else if (result6Score >= 3) {
     message = "You should try reading thriller books! Scroll down or click on the navigation bar above to see the thriller recommendations.";
-  } else if (result7Score >= 2) {
+  } else if (result7Score >= 3) {
     message = "You should try reading sci-fi or fantasy books! Scroll down or click on the navigation bar above to see the sci-fi/fantasy recommendations.";
   } else {
     message = "Hmm... Your answers were a bit conflicting. Try retaking the quiz one more time by refreshing the page!";
@@ -213,105 +317,104 @@ function hideAll() {
           document.querySelector('#lady').style.display ='block';
           break;
         case 'divineimg':
-            document.querySelector('#divine').style.display = 'block';
-            break;
-          case 'vanessaimg':
-            document.querySelector('#vanessa').style.display = 'block';
-            break;
-          case 'klaraimg':
-            document.querySelector('#klara').style.display = 'block';
-            break;
-          case 'mungoimg':
-            document.querySelector('#mungo').style.display = 'block';
-            break;
-          case 'telegraphimg':
-            document.querySelector('#telegraph').style.display = 'block';
-            break;
-          case 'legendimg':
-            document.querySelector('#legend').style.display = 'block';
-            break;
-          case 'rageimg':
-            document.querySelector('#rage').style.display = 'block';
-            break;
-          case 'spadesimg':
-            document.querySelector('#spades').style.display = 'block';
-            break;
-          case 'livingimg':
-            document.querySelector('#living').style.display = 'block';
-            break;
-          case 'hmartimg':
-            document.querySelector('#hmart').style.display = 'block';
-            break;
-          case 'earthimg':
-            document.querySelector('#earth').style.display = 'block';
-            break;
-          case 'anthropoceneimg':
-            document.querySelector('#anthropocene').style.display = 'block';
-            break;
-          case 'cultishimg':
-            document.querySelector('#cultish').style.display = 'block';
-            break;
-          case 'whisperimg':
-            document.querySelector('#whisper').style.display = 'block';
-            break;
-          case 'witchesimg':
-            document.querySelector('#witches').style.display = 'block';
-            break;
-          case 'titaniumimg':
-            document.querySelector('#titanium').style.display = 'block';
-            break;
-          case 'seastarsimg':
-            document.querySelector('#seastars').style.display = 'block';
-            break;
-          case 'kaikeyiimg':
-            document.querySelector('#kaikeyi').style.display = 'block';
-            break;
-          case 'coldimg':
-            document.querySelector('#cold').style.display = 'block';
-            break;
-          case 'comedyimg':
-            document.querySelector('#comedy').style.display = 'block';
-            break;
-          case 'sevenimg':
-            document.querySelector('#seven').style.display = 'block';
-            break;
-          case 'delilahimg':
-            document.querySelector('#delilah').style.display = 'block';
-            break;
-          case 'charmimg':
-            document.querySelector('#charm').style.display = 'block';
-            break;
-          case 'violinimg':
-            document.querySelector('#violin').style.display = 'block';
-            break;
-          case 'slowfireimg':
-            document.querySelector('#slowfire').style.display = 'block';
-            break;
-          case 'winterimg':
-            document.querySelector('#winter').style.display = 'block';
-            break;
-          case 'fortuneimg':
-            document.querySelector('#fortune').style.display = 'block';
-            break;
-          case 'veraimg':
-            document.querySelector('#vera').style.display = 'block';
-            break;
-          case 'onlyoneimg':
-            document.querySelector('#onlyone').style.display = 'block';
-            break;
-          case 'viceimg':
-            document.querySelector('#vice').style.display = 'block';
-            break;
-          case 'executionimg':
-            document.querySelector('#execution').style.display = 'block';
-            break;
-          case 'sugarimg':
-            document.querySelector('#sugar').style.display = 'block';
-            break;
-          case 'razorimg':
-            document.querySelector('#razor').style.display = 'block';
-            break;
-            
+          document.querySelector('#divine').style.display = 'block';
+          break;
+        case 'vanessaimg':
+          document.querySelector('#vanessa').style.display = 'block';
+          break;
+        case 'klaraimg':
+          document.querySelector('#klara').style.display = 'block';
+          break;
+        case 'mungoimg':
+          document.querySelector('#mungo').style.display = 'block';
+          break;
+        case 'telegraphimg':
+          document.querySelector('#telegraph').style.display = 'block';
+          break;
+        case 'legendimg':
+          document.querySelector('#legend').style.display = 'block';
+          break;
+        case 'rageimg':
+          document.querySelector('#rage').style.display = 'block';
+          break;
+        case 'spadesimg':
+          document.querySelector('#spades').style.display = 'block';
+          break;
+        case 'livingimg':
+          document.querySelector('#living').style.display = 'block';
+          break;
+        case 'hmartimg':
+          document.querySelector('#hmart').style.display = 'block';
+          break;
+        case 'earthimg':
+          document.querySelector('#earth').style.display = 'block';
+          break;
+        case 'anthropoceneimg':
+          document.querySelector('#anthropocene').style.display = 'block';
+          break;
+        case 'cultishimg':
+          document.querySelector('#cultish').style.display = 'block';
+          break;
+        case 'whisperimg':
+          document.querySelector('#whisper').style.display = 'block';
+          break;
+        case 'witchesimg':
+          document.querySelector('#witches').style.display = 'block';
+          break;
+        case 'titaniumimg':
+          document.querySelector('#titanium').style.display = 'block';
+          break;
+        case 'seastarsimg':
+          document.querySelector('#seastars').style.display = 'block';
+          break;
+        case 'kaikeyiimg':
+          document.querySelector('#kaikeyi').style.display = 'block';
+          break;
+        case 'coldimg':
+          document.querySelector('#cold').style.display = 'block';
+          break;
+        case 'comedyimg':
+          document.querySelector('#comedy').style.display = 'block';
+          break;
+        case 'sevenimg':
+          document.querySelector('#seven').style.display = 'block';
+          break;
+        case 'delilahimg':
+          document.querySelector('#delilah').style.display = 'block';
+          break;
+        case 'charmimg':
+          document.querySelector('#charm').style.display = 'block';
+          break;
+        case 'violinimg':
+          document.querySelector('#violin').style.display = 'block';
+          break;
+        case 'slowfireimg':
+          document.querySelector('#slowfire').style.display = 'block';
+          break;
+        case 'winterimg':
+          document.querySelector('#winter').style.display = 'block';
+          break;
+        case 'fortuneimg':
+          document.querySelector('#fortune').style.display = 'block';
+          break;
+        case 'veraimg':
+          document.querySelector('#vera').style.display = 'block';
+          break;
+        case 'onlyoneimg':
+          document.querySelector('#onlyone').style.display = 'block';
+          break;
+        case 'viceimg':
+          document.querySelector('#vice').style.display = 'block';
+          break;
+        case 'executionimg':
+          document.querySelector('#execution').style.display = 'block';
+          break;
+        case 'sugarimg':
+          document.querySelector('#sugar').style.display = 'block';
+          break;
+        case 'razorimg':
+          document.querySelector('#razor').style.display = 'block';
+          break; 
       }
     }
   });
