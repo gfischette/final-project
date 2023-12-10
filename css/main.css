@@ -86,8 +86,7 @@ footer a, .description a, #heading a {
     }  
 }
 
-/* stacked top links for navigation from https://codepen.io/bradfrost/pen/DqBJoR */
-
+/* the code for stacked top links for navigation is from https://codepen.io/bradfrost/pen/DqBJoR */
 
 .navigation li a {
     display: block;

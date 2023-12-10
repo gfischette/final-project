@@ -1,5 +1,5 @@
 
-// This code was taken from https://github.com/kayleyseow/Personality-Quiz and modifed to work with my app.
+// this code was taken from https://github.com/kayleyseow/Personality-Quiz and modifed to work with my app.
 
 var questionCount = 0;
 var result1Score = 0; // fiction
