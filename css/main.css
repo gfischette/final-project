@@ -83,7 +83,10 @@ footer a, .description a, #heading a {
 @media screen and (max-width: 600px) {
     form {
         padding: 0 1rem;
-    }  
+    } 
+    #introparagraph {
+        padding: 0 1rem;
+    } 
 }
 
 /* the code below is for the stacked top links for navigation and from https://codepen.io/bradfrost/pen/DqBJoR */
